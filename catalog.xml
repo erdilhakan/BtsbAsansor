@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="file:/D:/SanayiWSDL/IBstbAsansorDenetimServis.svc.wsdl" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.wsdl"/>
+    <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.wsdl" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.wsdl"/>
+    <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd0.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd0.xsd"/>
+    <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd4.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd4.xsd"/>
+    <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd1.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd1.xsd"/>
+    <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd2.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd2.xsd"/>
+    <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd3.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd3.xsd"/>
+</catalog>

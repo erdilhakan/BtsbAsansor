@@ -1,0 +1,493 @@
+<?xml version="1.0" encoding="utf-8"?><xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/BSTBNET.IcUygulamalar.Server.Contracts.DataContracts.AsansorDenetim" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/BSTBNET.IcUygulamalar.Server.Contracts.DataContracts.AsansorDenetim" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+    <xs:import schemaLocation="IBstbAsansorDenetimServis.svc.xsd1.xsd" namespace="http://schemas.microsoft.com/2003/10/Serialization/"/>
+    <xs:complexType name="AsansorKimlikKodlar">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AsansorEtiket" type="xs:string"/>
+            <xs:element minOccurs="0" name="AsansorNo" type="xs:long"/>
+            <xs:element minOccurs="0" name="AsansorSiraNo" type="xs:int"/>
+            <xs:element minOccurs="0" name="BinaKod" type="xs:int"/>
+            <xs:element minOccurs="0" name="EtiketYil" type="xs:int"/>
+            <xs:element minOccurs="0" name="GecerlilikTarih" type="xs:dateTime"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="AsansorKimlikKodlar" type="tns:AsansorKimlikKodlar"/>
+    <xs:complexType name="ArrayOfAsansorKimlikKodlar">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="AsansorKimlikKodlar" type="tns:AsansorKimlikKodlar"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfAsansorKimlikKodlar" type="tns:ArrayOfAsansorKimlikKodlar"/>
+    <xs:complexType name="DenetimKayit">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AsansorNo" type="xs:long"/>
+            <xs:element minOccurs="0" name="BasvuruKayitNo" type="xs:int"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetayAsansorBilgi" type="tns:ArrayOfDenetimKayitDetayAsansorBilgi"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetayBakimSozlesme" type="tns:ArrayOfDenetimKayitDetayBakimSozlesme"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetayBinaSorumlusuBilgileri" type="tns:ArrayOfDenetimKayitDetayBinaSorumlusuBilgileri"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetayFirmaBilgi" type="tns:ArrayOfDenetimKayitDetayFirmaBilgi"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetaySoru" type="tns:ArrayOfDenetimKayitDetaySoru"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetayTechizatBilgi" type="tns:ArrayOfDenetimKayitDetayTechizatBilgi"/>
+            <xs:element minOccurs="0" name="DenetimKayitSonuc" type="tns:ArrayOfDenetimKayitSonuc"/>
+            <xs:element minOccurs="0" name="DenetimTarih" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="DenetimYil" type="xs:int"/>
+            <xs:element minOccurs="0" name="Durum" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Id0" type="xs:int"/>
+            <xs:element minOccurs="0" name="MuayeneEsasAlinacakStandard" type="xs:int"/>
+            <xs:element minOccurs="0" name="MuayeneKisiAdSoyad" type="xs:string"/>
+            <xs:element minOccurs="0" name="MuayeneKisiUnvan" type="xs:string"/>
+            <xs:element minOccurs="0" name="ProtokolImzalayanBelediye" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayit" type="tns:DenetimKayit"/>
+    <xs:complexType name="ArrayOfDenetimKayitDetayAsansorBilgi">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitDetayAsansorBilgi" type="tns:DenetimKayitDetayAsansorBilgi"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitDetayAsansorBilgi" type="tns:ArrayOfDenetimKayitDetayAsansorBilgi"/>
+    <xs:complexType name="DenetimKayitDetayAsansorBilgi">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AsansorTuru" type="xs:int"/>
+            <xs:element minOccurs="0" name="BeyanHiz" type="xs:decimal"/>
+            <xs:element minOccurs="0" name="BeyanYuku" type="xs:int"/>
+            <xs:element minOccurs="0" name="BinaAdresKodu" type="xs:long"/>
+            <xs:element minOccurs="0" name="DurakSayi" type="xs:int"/>
+            <xs:element minOccurs="0" name="KatSayisi" type="xs:int"/>
+            <xs:element minOccurs="0" name="KimlikNumarasi" type="xs:string"/>
+            <xs:element minOccurs="0" name="MarkaTipModel" type="xs:string"/>
+            <xs:element minOccurs="0" name="MontajYil" type="xs:int"/>
+            <xs:element minOccurs="0" name="RuhsatSicilTarih" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="SeriNo" type="xs:string"/>
+            <xs:element minOccurs="0" name="TescilBelgesi" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="TescilTarihi" type="xs:dateTime"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitDetayAsansorBilgi" type="tns:DenetimKayitDetayAsansorBilgi"/>
+    <xs:complexType name="ArrayOfDenetimKayitDetayBakimSozlesme">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitDetayBakimSozlesme" type="tns:DenetimKayitDetayBakimSozlesme"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitDetayBakimSozlesme" type="tns:ArrayOfDenetimKayitDetayBakimSozlesme"/>
+    <xs:complexType name="DenetimKayitDetayBakimSozlesme">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="BakimSozlesmesiDurum" type="xs:int"/>
+            <xs:element minOccurs="0" name="TseBelgeDurum" type="xs:int"/>
+            <xs:element minOccurs="0" name="YetkiliServisSozlesmeDurum" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitDetayBakimSozlesme" type="tns:DenetimKayitDetayBakimSozlesme"/>
+    <xs:complexType name="ArrayOfDenetimKayitDetayBinaSorumlusuBilgileri">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitDetayBinaSorumlusuBilgileri" type="tns:DenetimKayitDetayBinaSorumlusuBilgileri"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitDetayBinaSorumlusuBilgileri" type="tns:ArrayOfDenetimKayitDetayBinaSorumlusuBilgileri"/>
+    <xs:complexType name="DenetimKayitDetayBinaSorumlusuBilgileri">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="BinaSorumluAdSoyad" type="xs:string"/>
+            <xs:element minOccurs="0" name="BinaSorumluIletisimEPosta" type="xs:string"/>
+            <xs:element minOccurs="0" name="BinaSorumluIletisimTelNo" type="xs:string"/>
+            <xs:element minOccurs="0" name="YapiAdres" type="xs:string"/>
+            <xs:element minOccurs="0" name="YapininSinifi" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitDetayBinaSorumlusuBilgileri" type="tns:DenetimKayitDetayBinaSorumlusuBilgileri"/>
+    <xs:complexType name="ArrayOfDenetimKayitDetayFirmaBilgi">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitDetayFirmaBilgi" type="tns:DenetimKayitDetayFirmaBilgi"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitDetayFirmaBilgi" type="tns:ArrayOfDenetimKayitDetayFirmaBilgi"/>
+    <xs:complexType name="DenetimKayitDetayFirmaBilgi">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="BakimFirmaAd" type="xs:string"/>
+            <xs:element minOccurs="0" name="BakimFirmaAdresi" type="xs:string"/>
+            <xs:element minOccurs="0" name="BakimFirmaTelefon" type="xs:string"/>
+            <xs:element minOccurs="0" name="BakimFirmaUnvan" type="xs:string"/>
+            <xs:element minOccurs="0" name="BakimFirmaYapi" type="xs:int"/>
+            <xs:element minOccurs="0" name="BakimFirmaYetkiliAdSoyad" type="xs:string"/>
+            <xs:element minOccurs="0" name="FirmaSozlesmeTarihi" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="HizmetYeterlilikBelgesiGecerlilikTarihi" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="KontrolNezaretEtmeDurum" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="YetkiliServisSozlesmeTarihi" type="xs:dateTime"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitDetayFirmaBilgi" type="tns:DenetimKayitDetayFirmaBilgi"/>
+    <xs:complexType name="ArrayOfDenetimKayitDetaySoru">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitDetaySoru" type="tns:DenetimKayitDetaySoru"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitDetaySoru" type="tns:ArrayOfDenetimKayitDetaySoru"/>
+    <xs:complexType name="DenetimKayitDetaySoru">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="DenetimKayitSoruId" type="xs:int"/>
+            <xs:element minOccurs="0" name="SoruSkala" type="xs:int"/>
+            <xs:element minOccurs="0" name="Versiyon" type="xs:base64Binary"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitDetaySoru" type="tns:DenetimKayitDetaySoru"/>
+    <xs:complexType name="ArrayOfDenetimKayitDetayTechizatBilgi">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitDetayTechizatBilgi" type="tns:DenetimKayitDetayTechizatBilgi"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitDetayTechizatBilgi" type="tns:ArrayOfDenetimKayitDetayTechizatBilgi"/>
+    <xs:complexType name="DenetimKayitDetayTechizatBilgi">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="DemirbasNo" type="xs:string"/>
+            <xs:element minOccurs="0" name="KalibrasyonBaslangicTarihi" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="KalibrasyonBitisTarihi" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="SeriNo" type="xs:string"/>
+            <xs:element minOccurs="0" name="TechizatAd" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitDetayTechizatBilgi" type="tns:DenetimKayitDetayTechizatBilgi"/>
+    <xs:complexType name="ArrayOfDenetimKayitSonuc">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayitSonuc" type="tns:DenetimKayitSonuc"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayitSonuc" type="tns:ArrayOfDenetimKayitSonuc"/>
+    <xs:complexType name="DenetimKayitSonuc">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="DenetimDurumId" type="xs:int"/>
+            <xs:element minOccurs="0" name="DenetimKayitId" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="DenetimKayitSonuc" type="tns:DenetimKayitSonuc"/>
+    <xs:complexType name="ArrayOfDenetimKayit">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="DenetimKayit" type="tns:DenetimKayit"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfDenetimKayit" type="tns:ArrayOfDenetimKayit"/>
+    <xs:complexType name="ArrayOfReferansAsansorTanim">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansAsansorTanim" type="tns:ReferansAsansorTanim"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansAsansorTanim" type="tns:ArrayOfReferansAsansorTanim"/>
+    <xs:complexType name="ReferansAsansorTanim">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="AsansorTanim" type="xs:string"/>
+            <xs:element minOccurs="0" name="DenetimKayitDetayAsansorBilgi" type="tns:ArrayOfDenetimKayitDetayAsansorBilgi"/>
+            <xs:element minOccurs="0" name="Id1" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansAsansorTanim" type="tns:ReferansAsansorTanim"/>
+    <xs:complexType name="ArrayOfReferansCihazTipi">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansCihazTipi" type="tns:ReferansCihazTipi"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansCihazTipi" type="tns:ArrayOfReferansCihazTipi"/>
+    <xs:complexType name="ReferansCihazTipi">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="CihazTipi" type="xs:string"/>
+            <xs:element minOccurs="0" name="Durum" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Id2" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansCihazTipi" type="tns:ReferansCihazTipi"/>
+    <xs:complexType name="ArrayOfReferansKontrolSorular">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansKontrolSorular" type="tns:ReferansKontrolSorular"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansKontrolSorular" type="tns:ArrayOfReferansKontrolSorular"/>
+    <xs:complexType name="ReferansKontrolSorular">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="GecerlilikTarih" type="xs:dateTime"/>
+            <xs:element minOccurs="0" name="Id3" type="xs:int"/>
+            <xs:element minOccurs="0" name="KritiklikSeviyeId" type="xs:int"/>
+            <xs:element minOccurs="0" name="SoruAciklama" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansKontrolSorular" type="tns:ReferansKontrolSorular"/>
+    <xs:complexType name="ArrayOfReferansFirmaYapi">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansFirmaYapi" type="tns:ReferansFirmaYapi"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansFirmaYapi" type="tns:ArrayOfReferansFirmaYapi"/>
+    <xs:complexType name="ReferansFirmaYapi">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Durum" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="FirmaYapi" type="xs:string"/>
+            <xs:element minOccurs="0" name="Id4" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansFirmaYapi" type="tns:ReferansFirmaYapi"/>
+    <xs:complexType name="ArrayOfReferansTseStandard">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansTseStandard" type="tns:ReferansTseStandard"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansTseStandard" type="tns:ArrayOfReferansTseStandard"/>
+    <xs:complexType name="ReferansTseStandard">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Id5" type="xs:int"/>
+            <xs:element minOccurs="0" name="StandardAd" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansTseStandard" type="tns:ReferansTseStandard"/>
+    <xs:complexType name="ArrayOfReferansSoruSkala">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansSoruSkala" type="tns:ReferansSoruSkala"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansSoruSkala" type="tns:ArrayOfReferansSoruSkala"/>
+    <xs:complexType name="ReferansSoruSkala">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="DurumAciklama" type="xs:string"/>
+            <xs:element minOccurs="0" name="Id6" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansSoruSkala" type="tns:ReferansSoruSkala"/>
+    <xs:complexType name="ArrayOfReferansYapininSinifi">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansYapininSinifi" type="tns:ReferansYapininSinifi"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansYapininSinifi" type="tns:ArrayOfReferansYapininSinifi"/>
+    <xs:complexType name="ReferansYapininSinifi">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
+            <xs:element minOccurs="0" name="Id7" type="xs:int"/>
+            <xs:element minOccurs="0" name="YapininSinifi" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansYapininSinifi" type="tns:ReferansYapininSinifi"/>
+    <xs:complexType name="ArrayOfReferansAsansorSoruDegerlendirme">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansAsansorSoruDegerlendirme" type="tns:ReferansAsansorSoruDegerlendirme"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansAsansorSoruDegerlendirme" type="tns:ArrayOfReferansAsansorSoruDegerlendirme"/>
+    <xs:complexType name="ReferansAsansorSoruDegerlendirme">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Degerlendirme" type="xs:string"/>
+            <xs:element minOccurs="0" name="Id8" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansAsansorSoruDegerlendirme" type="tns:ReferansAsansorSoruDegerlendirme"/>
+    <xs:complexType name="ArrayOfReferansDenetimSorularEslestirme">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="ReferansDenetimSorularEslestirme" type="tns:ReferansDenetimSorularEslestirme"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfReferansDenetimSorularEslestirme" type="tns:ArrayOfReferansDenetimSorularEslestirme"/>
+    <xs:complexType name="ReferansDenetimSorularEslestirme">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="AsansorTipi" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id9" type="xs:int"/>
+            <xs:element minOccurs="0" name="SoruId" type="xs:int"/>
+            <xs:element minOccurs="0" name="TseStandartId" type="xs:int"/>
+            <xs:element minOccurs="0" name="Versiyon" type="xs:base64Binary"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="ReferansDenetimSorularEslestirme" type="tns:ReferansDenetimSorularEslestirme"/>
+    <xs:complexType name="ArrayOfBelediye">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Belediye" type="tns:Belediye"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfBelediye" type="tns:ArrayOfBelediye"/>
+    <xs:complexType name="Belediye">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="BelediyeAdi" type="xs:string"/>
+            <xs:element minOccurs="0" name="IlKod" type="xs:int"/>
+            <xs:element minOccurs="0" name="IlceKod" type="xs:int"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+            <xs:element minOccurs="0" name="KoyKod" type="xs:int"/>
+            <xs:element minOccurs="0" name="PrmBelediyeTurKod" type="xs:string"/>
+            <xs:element minOccurs="0" name="UstBelediyeKod" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Belediye" type="tns:Belediye"/>
+    <xs:complexType name="ArrayOfBelediyeTur">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="BelediyeTur" type="tns:BelediyeTur"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfBelediyeTur" type="tns:ArrayOfBelediyeTur"/>
+    <xs:complexType name="BelediyeTur">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="BelediyeTur" type="tns:BelediyeTur"/>
+    <xs:complexType name="ArrayOfBina">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Bina" type="tns:Bina"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfBina" type="tns:ArrayOfBina"/>
+    <xs:complexType name="Bina">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="BlokAdi" type="xs:string"/>
+            <xs:element minOccurs="0" name="CsbmKodu" type="xs:int"/>
+            <xs:element minOccurs="0" name="DisKapiNo1" type="xs:string"/>
+            <xs:element minOccurs="0" name="DisKapiNo12" type="xs:string"/>
+            <xs:element minOccurs="0" name="DisKapiNo2" type="xs:string"/>
+            <xs:element minOccurs="0" name="EsBinaKodu" type="xs:string"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:long"/>
+            <xs:element minOccurs="0" name="Nitelik" type="xs:string"/>
+            <xs:element minOccurs="0" name="PostaKodu" type="xs:string"/>
+            <xs:element minOccurs="0" name="SiteAdi" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Bina" type="tns:Bina"/>
+    <xs:complexType name="ArrayOfMahalle">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Mahalle" type="tns:Mahalle"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfMahalle" type="tns:ArrayOfMahalle"/>
+    <xs:complexType name="Mahalle">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+            <xs:element minOccurs="0" name="KoyKodu" type="xs:int"/>
+            <xs:element minOccurs="0" name="TanitimKodu" type="xs:int"/>
+            <xs:element minOccurs="0" name="Tip" type="xs:string"/>
+            <xs:element minOccurs="0" name="YetkiliIdareKodu" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Mahalle" type="tns:Mahalle"/>
+    <xs:complexType name="ArrayOfIlce">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Ilce" type="tns:Ilce"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfIlce" type="tns:ArrayOfIlce"/>
+    <xs:complexType name="Ilce">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="IlKodu" type="xs:int"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Ilce" type="tns:Ilce"/>
+    <xs:complexType name="ArrayOfCsbm">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Csbm" type="tns:Csbm"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfCsbm" type="tns:ArrayOfCsbm"/>
+    <xs:complexType name="Csbm">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="Id10" type="xs:int"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+            <xs:element minOccurs="0" name="MahalleKodu" type="xs:int"/>
+            <xs:element minOccurs="0" name="TanitimKodu" type="xs:string"/>
+            <xs:element minOccurs="0" name="Tip" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Csbm" type="tns:Csbm"/>
+    <xs:complexType name="ArrayOfIl">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Il" type="tns:Il"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfIl" type="tns:ArrayOfIl"/>
+    <xs:complexType name="Il">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Il" type="tns:Il"/>
+    <xs:complexType name="ArrayOfBucak">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Bucak" type="tns:Bucak"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfBucak" type="tns:ArrayOfBucak"/>
+    <xs:complexType name="Bucak">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="IlceKodu" type="xs:int"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+            <xs:element minOccurs="0" name="SiraNo" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Bucak" type="tns:Bucak"/>
+    <xs:complexType name="ArrayOfKoy">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="Koy" type="tns:Koy"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="ArrayOfKoy" type="tns:ArrayOfKoy"/>
+    <xs:complexType name="Koy">
+        <xs:sequence>
+            <xs:element minOccurs="0" name="Ad" type="xs:string"/>
+            <xs:element minOccurs="0" name="BucakKod" type="xs:int"/>
+            <xs:element minOccurs="0" name="Kod" type="xs:int"/>
+        </xs:sequence>
+        <xs:attribute ref="ser:Id"/>
+        <xs:attribute ref="ser:Ref"/>
+    </xs:complexType>
+    <xs:element name="Koy" type="tns:Koy"/>
+</xs:schema>
