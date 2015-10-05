@@ -10,7 +10,7 @@
             <xs:element minOccurs="0" name="EtiketYil" type="xs:int"/>
             <xs:element minOccurs="0" name="GecerlilikTarih" type="xs:dateTime"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+        
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="AsansorKimlikKodlar" type="tns:AsansorKimlikKodlar"/>
@@ -34,13 +34,13 @@
             <xs:element minOccurs="0" name="DenetimTarih" type="xs:dateTime"/>
             <xs:element minOccurs="0" name="DenetimYil" type="xs:int"/>
             <xs:element minOccurs="0" name="Durum" type="xs:boolean"/>
-            <xs:element minOccurs="0" name="Id0" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
             <xs:element minOccurs="0" name="MuayeneEsasAlinacakStandard" type="xs:int"/>
             <xs:element minOccurs="0" name="MuayeneKisiAdSoyad" type="xs:string"/>
             <xs:element minOccurs="0" name="MuayeneKisiUnvan" type="xs:string"/>
             <xs:element minOccurs="0" name="ProtokolImzalayanBelediye" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayit" type="tns:DenetimKayit"/>
@@ -66,7 +66,7 @@
             <xs:element minOccurs="0" name="TescilBelgesi" type="xs:boolean"/>
             <xs:element minOccurs="0" name="TescilTarihi" type="xs:dateTime"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitDetayAsansorBilgi" type="tns:DenetimKayitDetayAsansorBilgi"/>
@@ -82,7 +82,7 @@
             <xs:element minOccurs="0" name="TseBelgeDurum" type="xs:int"/>
             <xs:element minOccurs="0" name="YetkiliServisSozlesmeDurum" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitDetayBakimSozlesme" type="tns:DenetimKayitDetayBakimSozlesme"/>
@@ -100,7 +100,7 @@
             <xs:element minOccurs="0" name="YapiAdres" type="xs:string"/>
             <xs:element minOccurs="0" name="YapininSinifi" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitDetayBinaSorumlusuBilgileri" type="tns:DenetimKayitDetayBinaSorumlusuBilgileri"/>
@@ -123,7 +123,7 @@
             <xs:element minOccurs="0" name="KontrolNezaretEtmeDurum" type="xs:boolean"/>
             <xs:element minOccurs="0" name="YetkiliServisSozlesmeTarihi" type="xs:dateTime"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitDetayFirmaBilgi" type="tns:DenetimKayitDetayFirmaBilgi"/>
@@ -139,7 +139,7 @@
             <xs:element minOccurs="0" name="SoruSkala" type="xs:int"/>
             <xs:element minOccurs="0" name="Versiyon" type="xs:base64Binary"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitDetaySoru" type="tns:DenetimKayitDetaySoru"/>
@@ -157,7 +157,7 @@
             <xs:element minOccurs="0" name="SeriNo" type="xs:string"/>
             <xs:element minOccurs="0" name="TechizatAd" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitDetayTechizatBilgi" type="tns:DenetimKayitDetayTechizatBilgi"/>
@@ -172,7 +172,7 @@
             <xs:element minOccurs="0" name="DenetimDurumId" type="xs:int"/>
             <xs:element minOccurs="0" name="DenetimKayitId" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="DenetimKayitSonuc" type="tns:DenetimKayitSonuc"/>
@@ -193,9 +193,9 @@
             <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
             <xs:element minOccurs="0" name="AsansorTanim" type="xs:string"/>
             <xs:element minOccurs="0" name="DenetimKayitDetayAsansorBilgi" type="tns:ArrayOfDenetimKayitDetayAsansorBilgi"/>
-            <xs:element minOccurs="0" name="Id1" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansAsansorTanim" type="tns:ReferansAsansorTanim"/>
@@ -209,9 +209,9 @@
         <xs:sequence>
             <xs:element minOccurs="0" name="CihazTipi" type="xs:string"/>
             <xs:element minOccurs="0" name="Durum" type="xs:boolean"/>
-            <xs:element minOccurs="0" name="Id2" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansCihazTipi" type="tns:ReferansCihazTipi"/>
@@ -225,11 +225,11 @@
         <xs:sequence>
             <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
             <xs:element minOccurs="0" name="GecerlilikTarih" type="xs:dateTime"/>
-            <xs:element minOccurs="0" name="Id3" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
             <xs:element minOccurs="0" name="KritiklikSeviyeId" type="xs:int"/>
             <xs:element minOccurs="0" name="SoruAciklama" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansKontrolSorular" type="tns:ReferansKontrolSorular"/>
@@ -243,9 +243,9 @@
         <xs:sequence>
             <xs:element minOccurs="0" name="Durum" type="xs:boolean"/>
             <xs:element minOccurs="0" name="FirmaYapi" type="xs:string"/>
-            <xs:element minOccurs="0" name="Id4" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansFirmaYapi" type="tns:ReferansFirmaYapi"/>
@@ -258,10 +258,10 @@
     <xs:complexType name="ReferansTseStandard">
         <xs:sequence>
             <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
-            <xs:element minOccurs="0" name="Id5" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
             <xs:element minOccurs="0" name="StandardAd" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansTseStandard" type="tns:ReferansTseStandard"/>
@@ -275,9 +275,9 @@
         <xs:sequence>
             <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
             <xs:element minOccurs="0" name="DurumAciklama" type="xs:string"/>
-            <xs:element minOccurs="0" name="Id6" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansSoruSkala" type="tns:ReferansSoruSkala"/>
@@ -290,10 +290,10 @@
     <xs:complexType name="ReferansYapininSinifi">
         <xs:sequence>
             <xs:element minOccurs="0" name="Aktif" type="xs:boolean"/>
-            <xs:element minOccurs="0" name="Id7" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
             <xs:element minOccurs="0" name="YapininSinifi" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansYapininSinifi" type="tns:ReferansYapininSinifi"/>
@@ -306,9 +306,9 @@
     <xs:complexType name="ReferansAsansorSoruDegerlendirme">
         <xs:sequence>
             <xs:element minOccurs="0" name="Degerlendirme" type="xs:string"/>
-            <xs:element minOccurs="0" name="Id8" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansAsansorSoruDegerlendirme" type="tns:ReferansAsansorSoruDegerlendirme"/>
@@ -321,12 +321,12 @@
     <xs:complexType name="ReferansDenetimSorularEslestirme">
         <xs:sequence>
             <xs:element minOccurs="0" name="AsansorTipi" type="xs:int"/>
-            <xs:element minOccurs="0" name="Id9" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
             <xs:element minOccurs="0" name="SoruId" type="xs:int"/>
             <xs:element minOccurs="0" name="TseStandartId" type="xs:int"/>
             <xs:element minOccurs="0" name="Versiyon" type="xs:base64Binary"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="ReferansDenetimSorularEslestirme" type="tns:ReferansDenetimSorularEslestirme"/>
@@ -346,7 +346,7 @@
             <xs:element minOccurs="0" name="PrmBelediyeTurKod" type="xs:string"/>
             <xs:element minOccurs="0" name="UstBelediyeKod" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Belediye" type="tns:Belediye"/>
@@ -361,7 +361,7 @@
             <xs:element minOccurs="0" name="Ad" type="xs:string"/>
             <xs:element minOccurs="0" name="Kod" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="BelediyeTur" type="tns:BelediyeTur"/>
@@ -384,7 +384,7 @@
             <xs:element minOccurs="0" name="PostaKodu" type="xs:string"/>
             <xs:element minOccurs="0" name="SiteAdi" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Bina" type="tns:Bina"/>
@@ -403,7 +403,7 @@
             <xs:element minOccurs="0" name="Tip" type="xs:string"/>
             <xs:element minOccurs="0" name="YetkiliIdareKodu" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Mahalle" type="tns:Mahalle"/>
@@ -419,7 +419,7 @@
             <xs:element minOccurs="0" name="IlKodu" type="xs:int"/>
             <xs:element minOccurs="0" name="Kod" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Ilce" type="tns:Ilce"/>
@@ -432,13 +432,13 @@
     <xs:complexType name="Csbm">
         <xs:sequence>
             <xs:element minOccurs="0" name="Ad" type="xs:string"/>
-            <xs:element minOccurs="0" name="Id10" type="xs:int"/>
+            <xs:element minOccurs="0" name="Id" type="xs:int"/>
             <xs:element minOccurs="0" name="Kod" type="xs:int"/>
             <xs:element minOccurs="0" name="MahalleKodu" type="xs:int"/>
             <xs:element minOccurs="0" name="TanitimKodu" type="xs:string"/>
             <xs:element minOccurs="0" name="Tip" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Csbm" type="tns:Csbm"/>
@@ -453,7 +453,7 @@
             <xs:element minOccurs="0" name="Ad" type="xs:string"/>
             <xs:element minOccurs="0" name="Kod" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Il" type="tns:Il"/>
@@ -470,7 +470,7 @@
             <xs:element minOccurs="0" name="Kod" type="xs:int"/>
             <xs:element minOccurs="0" name="SiraNo" type="xs:string"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Bucak" type="tns:Bucak"/>
@@ -486,7 +486,7 @@
             <xs:element minOccurs="0" name="BucakKod" type="xs:int"/>
             <xs:element minOccurs="0" name="Kod" type="xs:int"/>
         </xs:sequence>
-        <xs:attribute ref="ser:Id"/>
+         
         <xs:attribute ref="ser:Ref"/>
     </xs:complexType>
     <xs:element name="Koy" type="tns:Koy"/>

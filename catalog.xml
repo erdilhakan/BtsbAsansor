@@ -7,4 +7,10 @@
     <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd1.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd1.xsd"/>
     <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd2.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd2.xsd"/>
     <system systemId="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.xsd3.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd3.xsd"/>
+    <system systemId="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.wsdl" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.wsdl"/>
+    <system systemId="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.xsd0.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd0.xsd"/>
+    <system systemId="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.xsd4.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd4.xsd"/>
+    <system systemId="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.xsd1.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd1.xsd"/>
+    <system systemId="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.xsd2.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd2.xsd"/>
+    <system systemId="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.xsd3.xsd" uri="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.xsd3.xsd"/>
 </catalog>

@@ -19,7 +19,7 @@
     <target name="wsimport-client-IBstbAsansorDenetimServis.svc" depends="wsimport-init">
         <mkdir dir="${build.generated.dir}/jax-wsCache/IBstbAsansorDenetimServis.svc"/>
         <property name="wsdl-IBstbAsansorDenetimServis.svc" location="xml-resources/web-service-references/IBstbAsansorDenetimServis.svc/wsdl/IBstbAsansorDenetimServis.svc.wsdl"/>
-        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/IBstbAsansorDenetimServis.svc" destdir="${build.generated.dir}/jax-wsCache/IBstbAsansorDenetimServis.svc" wsdl="${wsdl-IBstbAsansorDenetimServis.svc}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/D:/SanayiWSDL/ProdWSDL/IBstbAsansorDenetimServis.svc.wsdl" xnocompile="true" xendorsed="true" package="bstbasansordenetimserviceclient">
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/IBstbAsansorDenetimServis.svc" destdir="${build.generated.dir}/jax-wsCache/IBstbAsansorDenetimServis.svc" wsdl="${wsdl-IBstbAsansorDenetimServis.svc}" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="file:/D:/ProdWSWsdl/IBstbAsansorDenetimServis.svc.wsdl" xnocompile="true" xendorsed="true" package="bstbasansordenetimserviceclient">
             <depends file="${wsdl-IBstbAsansorDenetimServis.svc}"/>
             <produces dir="${build.generated.dir}/jax-wsCache/IBstbAsansorDenetimServis.svc"/>
         </wsimport>
